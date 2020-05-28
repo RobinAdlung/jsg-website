@@ -16,7 +16,7 @@ body {
 	background-color: white;
 	overflow-x: hidden;
 	padding-top: 60px;
-	transition-duration: 0.5s;
+	transition-duration: 0.2s;
 	transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	box-shadow: 0 0 100px 0 rgba(0,0,0,0.5); 
 }
@@ -29,7 +29,7 @@ body {
 	font-weight: 400;
 	font-size: 14pt;
 	display: inline-block;
-	transition: 0.3s;
+	transition: 0.2s;
 }
 
 .sidenav .closebtn {
