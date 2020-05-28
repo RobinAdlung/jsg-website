@@ -1,0 +1,470 @@
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: white;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition-duration: 0.5s;
+	transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	box-shadow: 0 0 100px 0 rgba(0,0,0,0.5); 
+}
+
+.sidenav a {
+	margin: 20px 8px 20px 40px;
+	text-decoration: none;
+	color: black;
+	font-family: "baloo 2", "Verdana", 'sans-serif';
+	font-weight: 400;
+	font-size: 14pt;
+	display: inline-block;
+	transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.hamburger {
+	width: 50px;
+	margin: 10px 0 10px 20px;
+	/*box-shadow: 1px 3px 6px 0 rgba(0,0,0,0.3);*/
+	-webkit-tap-highlight-color:transparent;
+	border-radius: 15px;
+}
+
+.wortmarke-mob {
+	width: 200px;
+	margin: 20px auto 20px auto;
+}
+
+.index-link {
+	width: 100%;
+	display: flex;
+	align-content: center;
+	justify-content:  center;
+}
+
+.header-container {
+	display: flex;
+	align-items: center;
+	justify-content: right;
+}
+	
+
+.dropdown-btn {
+	padding: 20px;
+	cursor: pointer;
+	display: block;
+	float: right;
+	margin-right: 50px;
+	margin-top: 10px;
+	
+}
+
+
+.dropdown-container {
+	display: none;
+	background-color: #DFE7F1;
+	transition: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+.dropdown-container a {
+	display: block;
+	margin: 0 0 0 40px;
+	padding: 20px;
+}
+
+.dsk-header-container {
+	display: none;
+}
+
+@media (min-width: 1024px) {
+	.sidenav {
+		display: none;
+	}
+	
+	.header-container {
+		display: none;
+	}
+	
+	.dsk-header-container {
+		display: flex; 
+		
+	}
+	
+	.wortmarke-dsk {
+		width: 200px;
+		margin: 20px 0 20px 80px;
+	}
+	
+	nav {
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+		margin-left: 200px;
+	}
+	
+	nav a {
+		margin: 10px 50px;
+		display: block;
+	}
+	
+	.nav-links {
+		text-decoration: none;
+		color: black;
+		font-family: "baloo 2", "Verdana", 'sans-serif';
+		font-weight: 400;
+		font-size: 14pt;
+	}
+	
+	.nav-links:hover {
+		color: #FFB860;
+		text-decoration: none;
+	}
+	/*DROPDOWN LINKS*/
+
+
+	/* 1. LINK DROPDOWN */
+
+.dropdown01 {
+	float: left;
+	/*: hidden;*/
+}
+
+.dropdown01-content {
+	display: flex;
+	position: absolute;
+	background-color: white;
+	min-width: 190px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	border-radius: 10px;
+	z-index: 2;
+	flex-direction: column;
+	top:100px;
+	opacity: 0;
+	visibility: collapse; 
+	/* collapse verhindert, dass der hover auf dem Objekt getriggert werden kann*/
+	transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s, opacity 300ms ease-in 0s;
+}
+
+.dropdown01-content a {
+	float: none;
+	text-decoration: none;
+	display: block;
+	padding: 10px 20px;
+	margin: 0 auto;
+
+}
+
+	
+.dropdown01:hover .dropdown01-content {
+	visibility: visible;
+	opacity: 1;
+	transform: translate(0px,-25px);
+}
+	
+
+
+/* 2. LINK DROPDOWN */
+
+.dropdown02 {
+	float: left;
+	/*: hidden;*/
+}
+
+.dropdown02-content {
+	display: flex;
+	position: absolute;
+	background-color: white;
+	min-width: 190px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	border-radius: 10px;
+	z-index: 2;
+	flex-direction: column;
+	top:100px;
+	opacity: 0;
+	visibility: collapse; 
+	/* collapse verhindert, dass der hover auf dem Objekt getriggert werden kann*/
+	transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s, opacity 300ms ease-in 0s;
+}
+
+.dropdown02-content a {
+	float: none;
+	color: black;
+	text-decoration: none;
+	display: block;
+	padding: 10px 20px;
+	margin: 0 auto;
+}
+
+.dropdown02:hover .dropdown02-content {
+	visibility: visible;
+	opacity: 1;
+	transform: translate(0px,-25px);
+}
+
+
+/* 3. LINK DROPDOWN */
+
+.dropdown03 {
+	float: left;
+	/*: hidden;*/
+}
+
+.dropdown03-content {
+	display: flex;
+	position: absolute;
+	background-color: white;
+	min-width: 190px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	border-radius: 10px;
+	z-index: 2;
+	flex-direction: column;
+	top:100px;
+	transform: translateX(-30px); /* Korrigiert offset der Box in X-Achse. Muss identisch mit hover Transition sein */
+	opacity: 0;
+	visibility: collapse; 
+	/* collapse verhindert, dass der hover auf dem Objekt getriggert werden kann*/
+	transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s, opacity 300ms ease-in 0s;
+}
+
+.dropdown03-content a {
+	float: none;
+	color: black;
+	text-decoration: none;
+	display: block;
+	padding: 10px 20px;
+	margin: 0 auto;
+}
+
+.dropdown03:hover .dropdown03-content {
+	visibility: visible;
+	opacity: 1;
+	transform: translate(-30px,-25px);
+}
+
+/* 4. LINK DROPDOWN */
+
+.dropdown04 {
+	float: left;
+	/*: hidden;*/
+}
+
+.dropdown04-content {
+	display: flex;
+	position: absolute;
+	background-color: white;
+	min-width: 190px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	border-radius: 10px;
+	z-index: 2;
+	flex-direction: column;
+	top:160px;
+	opacity: 0;
+	visibility: collapse; 
+	/* collapse verhindert, dass der hover auf dem Objekt getriggert werden kann*/
+	transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s, opacity 300ms ease-in 0s;
+}
+
+.dropdown04-content a {
+	float: none;
+	color: black;
+	text-decoration: none;
+	display: block;
+	padding: 10px 20px;
+	margin: 0 auto;
+}
+
+.dropdown04:hover .dropdown04-content {
+	visibility: visible;
+	opacity: 1;
+	transform: translate(0px,-25px);
+}
+
+/* 5. LINK DROPDOWN */
+
+.dropdown05 {
+	float: left;
+	/*: hidden;*/
+}
+
+.dropdown05-content {
+	display: flex;
+	position: absolute;
+	background-color: white;
+	min-width: 190px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	border-radius: 10px;
+	z-index: 2;
+	flex-direction: column;
+	top:160px;
+	opacity: 0;
+	visibility: collapse; 
+	/* collapse verhindert, dass der hover auf dem Objekt getriggert werden kann*/
+	transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s, opacity 300ms ease-in 0s;
+}
+
+.dropdown05-content a {
+	float: none;
+	color: black;
+	text-decoration: none;
+	display: block;
+	padding: 10px 20px;
+	margin: 0 auto;
+}
+
+.dropdown05:hover .dropdown05-content {
+	visibility: visible;
+	opacity: 1;
+	transform: translate(0px,-25px);
+}
+
+/* 6. LINK DROPDOWN */
+
+.dropdown06 {
+	float: left;
+	/*: hidden;*/
+}
+
+.dropdown06-content {
+	display: flex;
+	position: absolute;
+	background-color: white;
+	min-width: 190px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	border-radius: 10px;
+	z-index: 2;
+	flex-direction: column;
+	top:160px;
+	transform: translateX(-50px); /* Korrigiert offset der Box in X-Achse. Muss identisch mit hover Transition sein */
+	opacity: 0;
+	visibility: collapse; 
+	/* collapse verhindert, dass der hover auf dem Objekt getriggert werden kann*/
+	transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s, opacity 300ms ease-in 0s;
+}
+
+.dropdown06-content a {
+	float: none;
+	color: black;
+	text-decoration: none;
+	display: block;
+	padding: 10px 20px;
+	margin: 0 auto;
+}
+
+.dropdown06:hover .dropdown06-content {
+	visibility: visible;
+	opacity: 1;
+	transform: translate(-50px,-25px);
+}
+
+/* 7. LINK DROPDOWN */
+
+.dropdown07 {
+	float: left;
+	/*: hidden;*/
+}
+
+.dropdown07-content {
+	display: flex;
+	position: absolute;
+	background-color: white;
+	min-width: 190px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+	border-radius: 10px;
+	z-index: 2;
+	flex-direction: column;
+	top:200px;
+	transform: translateX(20px); /* Korrigiert offset der Box in X-Achse. Muss identisch mit hover Transition sein */
+	opacity: 0;
+	visibility: collapse; 
+	/* collapse verhindert, dass der hover auf dem Objekt getriggert werden kann*/
+	transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s, opacity 300ms ease-in 0s;
+}
+
+.dropdown07-content a {
+	float: none;
+	color: black;
+	text-decoration: none;
+	display: block;
+	padding: 10px 20px;
+	margin: 5px auto;
+}
+
+.dropdown07:hover .dropdown07-content {
+	visibility: visible;
+	opacity: 1;
+	transform: translate(20px,-25px);
+}
+	
+}
+
+@media (min-width: 1205px){
+	.dropdown01-content, .dropdown02-content, .dropdown03-content, .dropdown04-content {
+		top: 130px;
+	}
+	
+	.dropdown05-content, .dropdown06-content, .dropdown07-content {
+		top: 180px;
+	}
+	}
+
+@media (min-width: 1372px){
+	.dropdown01-content, .dropdown02-content, .dropdown03-content, .dropdown04-content,.dropdown05-content {
+		top: 130px;
+	}
+	
+	.dropdown06-content, .dropdown07-content {
+		top: 180px;
+	}
+	
+
+@media (min-width: 1555px){
+	.dropdown01-content, .dropdown02-content, .dropdown03-content, .dropdown04-content,.dropdown05-content, .dropdown06-content {
+		top: 130px;
+	}
+	
+	.dropdown07-content {
+		top: 180px;
+	}
+	}
+	
+@media (min-width: 1777px){
+	.dropdown01-content, .dropdown02-content, .dropdown03-content, .dropdown04-content,.dropdown05-content, .dropdown06-content, .dropdown07-content {
+		top: 160px;
+	}
+
+	
+	
+	

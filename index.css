@@ -1,0 +1,190 @@
+/* CSS Document */
+
+/* body Background */
+
+body {
+	background-image: url("images/background/bg_rechteck.svg");
+	background-position: 800px 20%;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	overflow-x: hidden;
+}
+
+
+/*GALLERY*/
+
+.gallery-container {
+	display: block;
+	position: relative;
+	z-index: 0;
+}
+
+.gallery-img {
+	width: auto;
+	display: block;
+	position: relative;
+	height: 100%;
+	left: -40%;
+}
+
+.icon {
+	display: flex;
+	justify-content: center;
+}
+
+.icon svg {
+	margin: 10px 20px;	
+	float: left;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.prev-icon:hover .prev {
+	fill: black;
+}
+
+.next-icon:hover .next {
+	fill: black;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+	position: relative;
+	height: 400px;
+}
+
+/* Caption text */
+.captext {
+	font-family: "baloo 2", "Verdana", 'sans-serif';
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	bottom: 20px;
+	left: 30px;
+	width: 100%;
+	z-index: 4;
+	text-shadow: 0px 0px 4px black ;
+	margin: 0;
+	padding: 0;
+	/*text-align: center;*/
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 0.5s;
+	animation-name: fade;
+	animation-duration: 0.5s;
+}
+
+	@-webkit-keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	}
+
+	@keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	}
+
+
+
+/* List Element auf index.html */
+
+ul {
+	padding-left: 30px;
+	
+}
+
+li {
+	color: #578AE4;
+}
+
+/* container anpassen */
+
+.welcome-container, .aktuelles-container {
+	width: 80%;
+	margin-left: 10%;
+}
+
+
+@media (min-width: 500px) {
+	.mySlides {
+		height: 100%;
+	}
+	
+	.gallery-img {
+		width: 100%;
+		height: auto;
+		left: 0;
+	}
+	
+	.captext {
+		font-size: 3vw;
+	}
+}
+
+
+@media (min-width: 1024px) {
+	.gallery-container {
+		position: relative;
+		z-index: 1;
+		margin: 0 auto;
+		width: 80%;
+	}
+	
+	.gallery-img {
+		-webkit-box-shadow: 20px 20px 50px 0px rgba(0,0,0,0.2);
+		-moz-box-shadow: 20px 20px 50px 0px rgba(0,0,0,0.2);
+		box-shadow: 20px 20px 50px 0px rgba(0,0,0,0.2); 
+		border-radius: 10px;
+		
+	}
+	
+	.captext {
+		font-size: 2vw;
+	}
+}
+
+
+@media (min-width: 1205px) {
+	.welcome-container, .aktuelles-container {
+		width: 30%;
+		margin-left: 5%;
+	}
+	
+	.gallery-container {
+		position: absolute;
+		z-index: 1;
+		right: 2%;
+		top: 25%;
+		width: 60%;
+	}
+	
+	.gallery-img {
+		-webkit-box-shadow: 20px 20px 50px 0px rgba(0,0,0,0.2);
+		-moz-box-shadow: 20px 20px 50px 0px rgba(0,0,0,0.2);
+		box-shadow: 20px 20px 50px 0px rgba(0,0,0,0.2); 
+		border-radius: 10px;
+		
+	}
+	
+	.captext {
+		font-size: 2vw;
+	}
+}
+
+@media (min-width: 1800px) {
+	.gallery-container {
+		width: 1000px;
+		right: 10%;
+	}
+	
+	.welcome-container, .aktuelles-container {
+		margin-top: 5%;
+	}
+}
+/*
+
