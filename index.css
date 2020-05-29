@@ -17,6 +17,8 @@ body {
 	display: block;
 	position: relative;
 	z-index: 0;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 .gallery-img {
@@ -113,12 +115,15 @@ li {
 @media (min-width: 500px) {
 	.mySlides {
 		height: 100%;
+
 	}
 	
 	.gallery-img {
 		width: 100%;
 		height: auto;
 		left: 0;
+		padding: 0;
+
 	}
 	
 	.captext {
@@ -133,6 +138,7 @@ li {
 		z-index: 1;
 		margin: 0 auto;
 		width: 80%;
+		overflow-x: visible;
 	}
 	
 	.gallery-img {
